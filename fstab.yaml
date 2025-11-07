@@ -1,0 +1,7 @@
+mountpoints:
+  /:
+    url: https://content.da.live/amritha-corra/aem-repo-test/
+    type: markup
+
+folders:
+  /products/: /products/default
