@@ -143,6 +143,10 @@ async function loadLazy(doc) {
 
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
   loadFonts();
+  const script = document.createElement('script');
+
+  script.src = new URL('https://rum.hlx.page/.rum/@adobe/helix-rum-js@^2/dist/rum-standalone.js').href;
+  document.head.appendChild(script);
 }
 
 /**
